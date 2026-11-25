@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Uno Flip">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2c230"/><stop offset="1" stop-color="#d1431f"/></linearGradient></defs>
+<rect width="400" height="300" fill="url(#g)"/>
+<g fill="#fff" fill-opacity=".85" stroke="#000" stroke-opacity=".2" stroke-width="3"><rect x="120" y="60" width="90" height="130" rx="10" transform="rotate(-12 165 125)"/><rect x="190" y="60" width="90" height="130" rx="10" transform="rotate(10 235 125)"/></g>
+<g font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="36" fill="#fff" stroke="#000" stroke-opacity=".25" stroke-width="1"><text x="200" y="255" text-anchor="middle">Uno Flip</text></g>
+</svg>

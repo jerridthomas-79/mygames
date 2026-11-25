@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Catan">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e9a23b"/><stop offset="1" stop-color="#b5541c"/></linearGradient></defs>
+<rect width="400" height="300" fill="url(#g)"/>
+<g fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="6"><polygon transform="translate(130,110)" points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20"/><polygon transform="translate(200,110)" points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20"/><polygon transform="translate(270,110)" points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20"/><polygon transform="translate(165,170)" points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20"/><polygon transform="translate(235,170)" points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20"/></g>
+<g font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="36" fill="#fff" stroke="#000" stroke-opacity=".25" stroke-width="1"><text x="200" y="255" text-anchor="middle">Catan</text></g>
+</svg>

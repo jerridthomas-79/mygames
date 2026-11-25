@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What Are We Playing?</title>
+  <meta name="description" content="Vote on which games to play at game night.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>What Are We Playing?</h1>
+    <p class="sub">Give each game a 👍 or 👎. Tap again to take your vote back.</p>
+    <div class="controls">
+      <label for="sort">Sort</label>
+      <select id="sort">
+        <option value="score">Top score first</option>
+        <option value="name">A–Z</option>
+      </select>
+      <span id="mode" class="mode"></span>
+    </div>
+  </header>
+  <main id="grid" class="grid" aria-live="polite"></main>
+  <p id="error" class="error" hidden></p>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

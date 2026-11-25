@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Puerto Rico">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2e9e7a"/><stop offset="1" stop-color="#14574a"/></linearGradient></defs>
+<rect width="400" height="300" fill="url(#g)"/>
+<g fill="#fff" fill-opacity=".35"><path d="M110 170 h180 l-30 40 h-120z"/><path d="M200 50 v110 h-70z"/><path d="M210 70 v90 h60z"/></g>
+<g font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="36" fill="#fff" stroke="#000" stroke-opacity=".25" stroke-width="1"><text x="200" y="255" text-anchor="middle">Puerto Rico</text></g>
+</svg>

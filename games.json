@@ -1,0 +1,12 @@
+[
+  { "id": "catan",          "name": "Catan",                          "image": "images/catan.svg" },
+  { "id": "hotels",         "name": "Hotels",                         "image": "images/hotels.svg" },
+  { "id": "puerto-rico",    "name": "Puerto Rico",                    "image": "images/puerto-rico.svg" },
+  { "id": "cards-against-humanity", "name": "Cards Against Humanity", "image": "images/cards-against-humanity.svg" },
+  { "id": "jokers-and-marbles", "name": "Jokers and Marbles",         "image": "images/jokers-and-marbles.svg" },
+  { "id": "wahoo",          "name": "Wahoo",                          "image": "images/wahoo.svg" },
+  { "id": "uno-flip",       "name": "Uno Flip",                       "image": "images/uno-flip.svg" },
+  { "id": "uno-attack",     "name": "Uno Attack",                     "image": "images/uno-attack.svg" },
+  { "id": "kill-doctor-lucky", "name": "Kill Doctor Lucky",           "image": "images/kill-doctor-lucky.svg" },
+  { "id": "betrayal-at-house-on-the-hill", "name": "Betrayal at House on the Hill", "image": "images/betrayal-at-house-on-the-hill.svg" }
+]

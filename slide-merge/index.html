@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#1b1230">
+<title>Slide &amp; Merge</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="c"></canvas>
+
+  <!-- In-game HUD -->
+  <div id="hud" class="hidden">
+    <div class="topbar">
+      <button id="btnPause" class="icon-btn" aria-label="Pause">⏸</button>
+      <div class="stat"><div class="lbl">SCORE</div><div id="score">0</div></div>
+      <div class="stat"><div class="lbl">BEST</div><div id="best">0</div></div>
+      <div class="stat next"><div class="lbl">NEXT</div><div id="next"></div></div>
+    </div>
+    <div id="ladder"></div>
+    <div id="combo" class="hidden"></div>
+    <div id="toast" class="hidden"></div>
+    <div id="warning" class="hidden">⚠️ Too close to the line!</div>
+    <div id="tutorial" class="hidden"><div class="hand">👆</div>Swipe up to flick.<br>Match two to merge!</div>
+    <div id="targetHint" class="hidden"><span id="targetText"></span><button id="btnCancelTarget">Cancel</button></div>
+    <div class="powers">
+      <button class="power" data-p="bomb"><span class="pi">💣</span><span class="pn">Bomb</span><b>0</b></button>
+      <button class="power" data-p="upgrade"><span class="pi">⬆️</span><span class="pn">Upgrade</span><b>0</b></button>
+      <button class="power" data-p="shake"><span class="pi">🫨</span><span class="pn">Shake</span><b>0</b></button>
+      <button class="power" data-p="swap"><span class="pi">🔄</span><span class="pn">Swap</span><b>0</b></button>
+    </div>
+  </div>
+
+  <!-- Home -->
+  <div id="home" class="screen">
+    <div class="panel">
+      <h1>Slide <span>&amp;</span> Merge</h1>
+      <p class="sub">Flick it. Match it. Grow it.</p>
+      <div id="homeLadder" class="mini-ladder"></div>
+      <div class="theme-pick">
+        <button data-theme="fruit">🍉 Fruit</button>
+        <button data-theme="drinks">🍹 Drinks</button>
+      </div>
+      <button id="btnContinue" class="big hidden">Continue</button>
+      <button id="btnPlay" class="big">Play</button>
+      <button id="btnHow" class="ghost">How to play</button>
+      <div class="home-best">Best: <b id="homeBest">0</b></div>
+    </div>
+  </div>
+
+  <!-- How to play -->
+  <div id="howto" class="screen hidden">
+    <div class="panel left">
+      <h2>How to play</h2>
+      <ol>
+        <li><b>Aim:</b> drag left or right along the bottom of the table.</li>
+        <li><b>Flick:</b> swipe up. A faster swipe sends it farther. Swipe at an angle to curve your shot sideways.</li>
+        <li><b>Merge:</b> when two of the same item touch, they become the next bigger item.</li>
+        <li><b>Combos:</b> merge again quickly for a score multiplier.</li>
+        <li><b>Don't cross the line:</b> if an item rests over the red line for too long, the game ends.</li>
+        <li><b>Power-ups:</b> 💣 removes an item, ⬆️ upgrades one, 🫨 shakes everything forward, 🔄 swaps your current and next item. You earn a new one every 1,500 points.</li>
+        <li>Merge two of the biggest item for a huge bonus.</li>
+      </ol>
+      <button id="btnHowBack" class="big">Got it</button>
+    </div>
+  </div>
+
+  <!-- Pause -->
+  <div id="pause" class="screen hidden">
+    <div class="panel">
+      <h2>Paused</h2>
+      <button id="btnResume" class="big">Resume</button>
+      <button id="btnRestart" class="ghost">Restart</button>
+      <div class="toggles">
+        <button id="tglSound" class="toggle">🔊 Sound: On</button>
+        <button id="tglVibe" class="toggle">📳 Vibration: On</button>
+      </div>
+      <button id="btnHome" class="ghost">Home</button>
+    </div>
+  </div>
+
+  <!-- Game over -->
+  <div id="over" class="screen hidden">
+    <div class="panel">
+      <h2>Game Over</h2>
+      <div id="newBest" class="new-best hidden">🏆 New best!</div>
+      <div class="over-stats">
+        <div><div class="lbl">SCORE</div><div id="overScore">0</div></div>
+        <div><div class="lbl">BEST</div><div id="overBest">0</div></div>
+        <div><div class="lbl">BIGGEST</div><div id="overBig">—</div></div>
+        <div><div class="lbl">MERGES</div><div id="overMerges">0</div></div>
+      </div>
+      <button id="btnAgain" class="big">Play again</button>
+      <button id="btnOverHome" class="ghost">Home</button>
+    </div>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>

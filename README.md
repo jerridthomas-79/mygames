@@ -23,3 +23,16 @@ A static page, hosted on GitHub Pages, listing the games we play. Everyone can g
 
 ## Publishing on GitHub Pages
 Repo → Settings → Pages → Source: "Deploy from a branch" → choose the branch and `/ (root)`.
+
+---
+
+# Slide & Merge (`slide-merge/`)
+
+A flick-and-merge game: swipe up to slide an item across a table; two of the same item merge into the next bigger one. Play at `/slide-merge/` on the Pages site.
+
+- Two themes: Fruit (🫐 → 🍉) and Drinks (🧃 → 🍾), 11 sizes each
+- Swipe to aim and flick (swipe speed sets power, swipe angle steers)
+- Combos, score popups, merge ladder, best score, red danger line with game over
+- Power-ups: Bomb, Upgrade, Shake, Swap (earn one every 1,500 points)
+- Pause menu, sound and vibration toggles, auto-saved game with Continue
+- Everything is in `slide-merge/game.js`; tune sizes, speeds and themes at the top of that file
